@@ -6,28 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="rgba(233, 61, 107, .7)" />
   
-  <title>My Bookself Apps</title>
+  <title>My Bookshelf Apps</title>
   
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <nav class="top-bar">
     <div class="my-container welcome">
-      <h1>Selamat Datang di Bookself Apps</h1>
+      <h1>Selamat Datang di Bookshelf Apps!</h1>
     </div>
   </nav>
-  
   <div class="content">
     <div class="col-1">
       <div class="pengguna-info my-container">
-        <div class="pengguna-img">
-          <img src="assets/img/avatar.jpg" alt="Avatar" />
-        </div>
-        <h1 class="pengguna-nama">Supriyono</h1>
-        <p class="pengguna-bio">
-          Mahasiswa
-        </p>
         <ul>
           <li>
             <h4>Jumlah Buku</h4>
@@ -35,25 +26,7 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="my-container mt-2">
-        <form>
-          <input class="" type="text" name="" id="bookTitle" placeholder="Cari Buku ..."/>
-          <button class="submit" type="submit"><i class="fi-rr-search"></i></button>
-        </form>
-      </div> -->
       <div class="my-container icons">
-        <!-- <div class="my-icon">
-          <div class="after-icon">
-            <i class="fi-rr-book-alt"></i>
-          </div>
-          <h5>Dibaca</h5>
-        </div>
-        <div class="my-icon">
-          <div class="before-icon">
-             <i class="fi-rr-bookmark"></i>
-          </div>
-          <h5>Belum Dibaca</h5>
-        </div> -->
         <div class="my-icon">
           <div class="add-book" id="add-book">
             <i class="fi-sr-add"></i>
@@ -63,27 +36,20 @@
       </div>
     </div>
     <div class="col-2">
-      <!-- <div class="my-container welcome">
-        <h1>Selamat Datang di Bookself Apps</h1>
-        <p>Kelola Buku jadi lebih mudah hanya di Bookself Apps, Coba Sekarang !</p>
-      </div> -->
-      
-      
       <div class="content-book">
         <div class="before" id="before">
-          <h4>Belum Dibaca</h4>
+          <h4>Belum Selesai Dibaca</h4>
         </div>
-        
         <div class="after" id="after">
-          <h4>Sudah Dibaca</h4>
+          <h4>Selesai Dibaca</h4>
         </div>
       </div>
     </div>
   </div>
 
-    <div id="modal">
+    <div id="masukan">
         <section class="my-container">
-            <h2>Buku Baru</h2>
+            <h3>Masukan Buku Baru</h3>
             <form id="form">
                 <div class="input-group">
                     <input type="text" id="title" placeholder="Judul Buku" class="input-form"
@@ -104,8 +70,6 @@
             </form>
         </section>
     </div>
-    
-
 
   <script src="./storage.js"></script>
   <script src="./main.js"></script>

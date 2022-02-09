@@ -1,6 +1,6 @@
-const modal = document.querySelector('#modal')
+const masukan = document.querySelector('#masukan')
 const addButton = document.getElementById('add-book');
-const closeModal = document.getElementById('close')
+const closeMasukan = document.getElementById('close')
 const UNCOMPLETED_BOOK_ID = "before";
 const COMPLETED_BOOK_ID ="after";
 const BOOK_ITEMID = "itemId";
@@ -137,18 +137,18 @@ const booksLength = () => {
 }
 
 addButton.addEventListener("click", () => {
-  modal.classList.toggle("modal-open")
+  masukan.classList.toggle("masukan-open")
 })
-closeModal.addEventListener("click", () => {
-  modal.style.transition = '1s';
-  modal.classList.toggle("modal-open")
+closeMasukan.addEventListener("click", () => {
+  masukan.style.transition = '1s';
+  masukan.classList.toggle("masukan-open")
 })
 
 document.addEventListener("DOMContentLoaded", function () {
   const submitForm = document.getElementById("form");
   submitForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    modal.classList.remove("modal-open");
+    masukan.classList.remove("masukan-open");
     addBook();
   });
 
